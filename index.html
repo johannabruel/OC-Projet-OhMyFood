@@ -5,8 +5,6 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="description" content="Application de commande de repas en ligne qui permet de composer son menu et de réduire le temps d'attente dans les restaurants">
 	<link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" type="text/css" href="css/tablette.css" media="screen and (max-width: 991px)">
-    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 767px)">
 	<!--Ajout police d'écriture-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +19,114 @@
 			<img class="header__logo" src="./images/logo/ohmyfood.png" alt="logo">
 		</div>
 	</header>
-
+	<main>
+		<section>
+			<form method="post" action="recherche.php">
+				<span>
+					<i class="fas fa-map-marker-alt"></i>
+				</span>
+				<input type="search" name="recherche" id="recherche" placeholder="Paris, Belleville" size="1"/>
+				<div>
+					<header>
+						<h1>Réservez le menu qui vous convient</h1>
+						<p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+					</header>
+					<button>
+						<span>Explorer nos restaurants</span>
+					</button>
+				</div>
+			</form>
+		</section>
+		<section>
+			<header>
+				<h1>Fonctionnement</h1>
+			</header>
+			<ol>
+				<li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
+				<li><i class="fas fa-list-ul"></i>Composez votre menu</li>
+				<li><i class="fas fa-store"></i>Dégustez au restaurant</li>
+			</ol>
+		</section>
+		<section>
+			<header>
+				<h1>Restaurants</h1>
+			</header>
+			<div>
+				<article>
+					<a href="#">
+						<figure>
+							<img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
+						</figure>
+						<figcaption>
+							<div>
+								<h2>La palette du goût</h2>
+								<p>Ménilmontant</p>
+							</div>
+							<div>
+								<i class="fas fa-heart"></i>
+							</div>
+						</figcaption>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<figure>
+							<img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
+						</figure>
+						<figcaption>
+							<div>
+								<h2>La note enchantée</h2>
+								<p>Charonne</p>
+							</div>
+							<div>
+								<i class="fas fa-heart"></i>
+							</div>
+						</figcaption>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<figure>
+							<img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"/>
+						</figure>
+						<figcaption>
+							<div>
+								<h2>À la française</h2>
+								<p>Cité Rouge</p>
+							</div>
+							<div>
+								<i class="fas fa-heart"></i>
+							</div>
+						</figcaption>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<figure>
+							<img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
+						</figure>
+						<figcaption>
+							<div>
+								<h2>Le délice des sens</h2>
+								<p>Folie-Méricourt</p>
+							</div>
+							<div>
+								<i class="fas fa-heart"></i>
+							</div>
+						</figcaption>
+					</a>
+				</article>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<img class="header__logo" src="./images/logo/ohmyfood.png" alt="logo">
+		<ul>
+			<li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+			<li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
+			<li><a href="#">Mentions légales</a></li>
+			<li><a href="mailto:ohmyfood@contact.com">Contact</a></li>
+		</ul>
+	</footer>
   </body>
 </html>
