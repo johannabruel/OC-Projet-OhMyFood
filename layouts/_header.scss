@@ -1,0 +1,15 @@
+.header{
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__return {
+        align-self: center;
+        position: absolute;
+        left: 20px;
+    }
+    &__logo {
+        width: 180px;
+    }
+}
