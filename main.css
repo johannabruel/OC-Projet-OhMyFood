@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.header {
+  padding: 20px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header__return {
+  align-self: center;
+  position: absolute;
+  left: 20px;
+}
+.header__logo {
+  width: 180px;
+}
+
+* { /*Intégration des propriétés Box-sizing à tous les éléments */
+  box-sizing: border-box; /* Opera/IE 8+ */
+  -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}/*# sourceMappingURL=main.css.map */
