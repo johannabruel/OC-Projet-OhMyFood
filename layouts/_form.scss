@@ -1,0 +1,52 @@
+.form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    background-color: #eaeaea;
+    padding: 10px 0;
+
+    &__position {
+      width: 150px;
+      border: none;
+      font-size: 16px;
+      background-color: #eaeaea;
+
+        &::placeholder {
+            color: #353535;;
+            opacity: 1;
+        }
+    }
+
+    &__icone {
+        color: #353535;
+    }
+}
+
+.form2{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        text-align: center;
+
+        h1 {
+            padding: 10px 50px 0 50px;
+        }
+
+        p {
+            margin: 10px 10px 30px 10px;
+            color: #3f3f3f;
+            font-weight: 100;
+        }
+    }
+}
+
+.form3 {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 50px 0;
+}
