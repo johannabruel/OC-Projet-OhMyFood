@@ -4,33 +4,34 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="description" content="Application de commande de repas en ligne qui permet de composer son menu et de réduire le temps d'attente dans les restaurants">
-	<link rel="stylesheet" href="./main.css" />
+	<link rel="stylesheet" href="main.css" />
 	<!--Ajout police d'écriture-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<title>Oh My food</title>
 </head>
 <body>
 	<header>
 		<div class="header">
-			<i class="header__return fas fa-arrow-left"></i>
-			<img class="header__logo" src="./images/logo/ohmyfood.png" alt="logo">
+			<img class="header__logo" src="images/logo/ohmyfood.png" alt="logo">
 		</div>
 	</header>
 	<main>
 		<section>
-			<form method="post" action="recherche.php">
-				<span>
-					<i class="fas fa-map-marker-alt"></i>
-				</span>
-				<input type="search" name="recherche" id="recherche" placeholder="Paris, Belleville" size="1"/>
-				<div>
-					<header>
+			<form class="form" method="post" action="recherche.php">
+				<div class="form1">
+					<i class="form1__icone fas fa-map-marker-alt"></i>
+					<input class= "form1__position" type="search" name="recherche" id="recherche" placeholder="Paris, Belleville" size="1"/>
+				</div>
+				<div class="form2">
+					<header class="form2__header">
 						<h1>Réservez le menu qui vous convient</h1>
 						<p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
 					</header>
+				</div>
+				<div class="form3">
 					<button>
 						<span>Explorer nos restaurants</span>
 					</button>
@@ -53,9 +54,9 @@
 			</header>
 			<div>
 				<article>
-					<a href="#">
+					<a href="menu1.html">
 						<figure>
-							<img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
+							<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
 						</figure>
 						<figcaption>
 							<div>
@@ -69,9 +70,9 @@
 					</a>
 				</article>
 				<article>
-					<a href="#">
+					<a href="menu2.html">
 						<figure>
-							<img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
+							<img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
 						</figure>
 						<figcaption>
 							<div>
@@ -85,9 +86,9 @@
 					</a>
 				</article>
 				<article>
-					<a href="#">
+					<a href="menu3.html">
 						<figure>
-							<img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"/>
+							<img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"/>
 						</figure>
 						<figcaption>
 							<div>
@@ -101,9 +102,9 @@
 					</a>
 				</article>
 				<article>
-					<a href="#">
+					<a href="menu4.html">
 						<figure>
-							<img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
+							<img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
 						</figure>
 						<figcaption>
 							<div>
@@ -120,7 +121,7 @@
 		</section>
 	</main>
 	<footer>
-		<img class="header__logo" src="./images/logo/ohmyfood.png" alt="logo">
+		<img class="header__logo" src="images/logo/ohmyfood.png" alt="logo">
 		<ul>
 			<li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
 			<li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
