@@ -3,3 +3,47 @@
     -moz-box-sizing: border-box; /* Firefox, autres Gecko */
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
  }
+
+ body {
+    margin: 0;
+    font-family:'Roboto',Impact,'Arial Black', Arial, Verdana, sans-serif;
+    font-size: 18px;
+ }
+
+ main {
+    background-color: #f6f6f6 ;
+ }
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+   font-size: 20px;
+   color: black;
+   margin: 0;
+   padding: 5px 0;
+}
+
+p {
+   margin: 0;
+   font-size: 16px;
+   font-weight: 100;
+}
+
+a {
+   text-decoration:none; 
+   color: black;
+}
+
+footer a {
+   color: white;
+}
+
+.footer {
+   background-color: #353535 ;
+   color: white;
+
+   &__logo {
+      font-family: 'Shrikhand'
+   }
+}
