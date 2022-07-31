@@ -1,4 +1,4 @@
-button {
+.btn {
     display: flex;
     justify-content: center;
     background:linear-gradient(#FF79DA,#9356dc) ;
@@ -10,4 +10,9 @@ button {
     font-weight: 400;
     border: none;
     box-shadow: 3px 5px 5px #cdcdcd;
+    transition: transform 400ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.15);
+    }
 }
