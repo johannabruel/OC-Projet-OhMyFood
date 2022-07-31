@@ -24,10 +24,37 @@ h2 {
    padding: 5px 0;
 }
 
+h3 {
+   font-family:'Shrikhand',Impact,'Arial Black', Arial, Verdana, sans-serif;
+   font-size: 26px;
+   margin: 10px 0 0 0px;
+}
+
+h4 {
+   text-transform: uppercase;
+   margin: 0;
+   font-weight: 300;
+   font-size: 16px;
+}
+
+h5 {
+   margin: 0;
+   font-size: 17px;
+   font-weight: 500;
+}
+
 p {
    margin: 0;
    font-size: 16px;
    font-weight: 100;
+}
+.card__header p {
+   font-size: 14px;
+   margin: 5px 0 0 0;
+}
+
+.p-price {
+   font-weight: 500;
 }
 
 a {
