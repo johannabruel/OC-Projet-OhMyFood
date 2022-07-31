@@ -1,0 +1,124 @@
+.headerimg {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.main {
+    margin-top: -30px;
+    position: relative;
+    border-radius: 30px 30px 0 0;
+    background-color: #eaeaea;
+    padding: 0 10px;
+    padding: 10px 20px;
+    
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__headericone {
+        padding: 0 20px 0px 0px;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 15px;
+    margin: 30px 0;
+    overflow: hidden;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title::after {
+        content: "";
+        width: 40px;
+        height: 3px;
+        background-color: #99e2d0;
+        margin-top: 5px;
+    }
+}
+
+.card {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0px 10px 10px; 
+    width: 100%;
+
+    &__header {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex: 1;
+    }
+
+    &__headertitle {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    &__headerdescription {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 10px;
+    }
+    
+    &__valid {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background-color: #99e2d0;
+        border-radius: 0 10px 10px 0;
+        padding: 20px 10px;
+        width: 50px;
+        margin-right: -50px;
+        transition-duration: 600ms;
+    }
+
+    &:hover &__valid {
+        margin-right: 0px;
+    }
+
+    &__validicone {
+        transform: rotate(-180deg);
+        transition: transform 600ms ease-in-out ;
+        background-color: white;
+        border-radius: 100px;
+        height: 20px;
+        width: 20px;
+
+        i {
+            color: #99e2d0;
+            font-size: 18px;
+        }
+    }
+
+    &:hover &__validicone {
+        transform: rotate(0);
+    }
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 40px 0;
+}
