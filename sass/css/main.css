@@ -67,6 +67,13 @@
   padding: 0 20px 0px 0px;
 }
 
+@media screen and (min-width: 790px) {
+  .menus {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -75,6 +82,12 @@
   gap: 15px;
   margin: 30px 0;
   overflow: hidden;
+}
+@media screen and (min-width: 790px) {
+  .menu {
+    width: 33%;
+    margin: 30px 10px;
+  }
 }
 .menu__title {
   display: flex;
@@ -274,13 +287,14 @@ footer a {
   background: linear-gradient(#FF79DA, #9356dc);
   border-radius: 20px;
   color: white;
-  width: 55%;
+  width: 210px;
   padding: 10px 0;
   font-size: 16px;
   font-weight: 400;
   border: none;
   box-shadow: 3px 5px 5px #cdcdcd;
   transition: transform 400ms ease-in-out;
+  cursor: pointer;
 }
 .btn:hover {
   transform: scale(1.15);
@@ -295,21 +309,42 @@ footer a {
   padding: 0;
   counter-reset: fonction-counter 0;
 }
-.fonction__list li {
-  padding: 20px 10px;
-  margin: 15px 0 30px 15px;
+@media screen and (min-width: 790px) {
+  .fonction__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.list {
+  padding: 20px 20px 20px 5px;
+  margin: 15px 5px 30px 15px;
   display: flex;
   align-items: center;
-  background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 3px 5px 5px #ececec;
+  background-color: #f7f6f6;
+  cursor: pointer;
 }
-.fonction__list li i {
+@media screen and (min-width: 790px) {
+  .list {
+    width: 30%;
+  }
+}
+.list:hover {
+  background-color: #f4edfd;
+  transition-duration: 400ms;
+}
+.list__texte {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list__icone {
   display: flex;
   margin-right: 20px;
   color: #717171;
 }
-.fonction__list li::before {
+.list::before {
   counter-increment: fonction-counter 1;
   content: counter(fonction-counter);
   border: transparent;
@@ -318,7 +353,7 @@ footer a {
   padding: 4px 9px;
   color: white;
   position: relative;
-  left: -25px;
+  left: -20px;
 }
 
 .section-article {
@@ -332,15 +367,15 @@ footer a {
 }
 
 .article {
-  width: 48%;
+  width: 100%;
   border: 2px transparent;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 4px 4px #d3d3d3;
 }
-@media screen and (max-width: 790px) {
+@media screen and (min-width: 790px) {
   .article {
-    width: 100%;
+    width: 48%;
   }
 }
 .article__link {
@@ -380,12 +415,17 @@ footer a {
   justify-content: space-between;
   align-items: center;
   margin: 0px 12px 8px 12px;
+  overflow: hidden;
 }
-.figure__figcaption--part {
+.figure__figcaptiontexte {
   display: flex;
   flex-direction: column;
 }
-.figure__figcaption--part i {
+.figure__figcaptionlike {
+  display: flex;
+  flex-direction: column;
+}
+.figure__figcaptionlike i {
   padding: 10px;
 }
 
