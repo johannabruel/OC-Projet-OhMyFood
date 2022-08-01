@@ -10,13 +10,13 @@
 }
 
 .article {
-    width: 48%; 
+    width: 100%; 
     border: 2px transparent;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 4px #d3d3d3;
-    @media screen and (max-width:790px){
-        width: 100%;
+    @media screen and (min-width:790px){
+        width: 48%;
     }
 
     &__link {
@@ -60,14 +60,20 @@
         justify-content: space-between;
         align-items: center;
         margin: 0px 12px 8px 12px;
-        
-        &--part {
+        overflow: hidden;
+    }
+
+    &__figcaptiontexte{ 
         display: flex;
         flex-direction: column;
+        
+    }
 
-            i {
-                padding: 10px;
-            }
+    &__figcaptionlike {
+        display: flex;
+        flex-direction: column; 
+        i {
+            padding: 10px;
         }
     }
 }
