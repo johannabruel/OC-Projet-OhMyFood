@@ -22,6 +22,12 @@
         padding: 0 20px 0px 0px;
     }
 }
+.menus {
+    @media screen and (min-width:790px){
+        display: flex;
+        justify-content: center;
+    } 
+}
 
 .menu {
     display: flex;
@@ -31,6 +37,10 @@
     gap: 15px;
     margin: 30px 0;
     overflow: hidden;
+    @media screen and (min-width:790px){
+        width: 33%;
+        margin: 30px 10px;
+    } 
 
     &__title {
         display: flex;
