@@ -32,6 +32,10 @@
         transition-duration: 400ms;
     }
 
+    &:hover > .list__icone {
+        color: #9356DC;
+    }
+
     &__texte {
         overflow: hidden;
         text-overflow: ellipsis;
