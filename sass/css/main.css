@@ -335,6 +335,9 @@ footer a {
   background-color: #f4edfd;
   transition-duration: 400ms;
 }
+.list:hover > .list__icone {
+  color: #9356DC;
+}
 .list__texte {
   overflow: hidden;
   text-overflow: ellipsis;
