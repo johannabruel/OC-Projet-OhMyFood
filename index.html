@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="description" content="Application de commande de repas en ligne qui permet de composer son menu et de réduire le temps d'attente dans les restaurants">
-	<link rel="stylesheet" href="./sass/css/main.css" />
+	<link rel="stylesheet" href="/css/main.css" />
 	<!--Ajout police d'écriture-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,24 +19,21 @@
 		</div>
 	</header>
 	<main>
-		<section>
+		<section class="mainform">
 			<form class="form" method="post" action="recherche.php">
-				<div class="form1">
-					<i class="form1__icone fas fa-map-marker-alt"></i>
-					<input class= "form1__position" type="search" name="recherche" id="recherche" placeholder="Paris, Belleville" size="1"/>
-				</div>
-				<div class="form2">
-					<header class="form2__header">
-						<h1>Réservez le menu qui vous convient</h1>
-						<p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-					</header>
-				</div>
-				<div class="form3">
-					<button class="btn">
-						<span>Explorer nos restaurants</span>
-					</button>
-				</div>
+				<i class="form__icone fas fa-map-marker-alt"></i>
+				<input class= "form__position" type="search" name="recherche" id="recherche" placeholder="Paris, Belleville" size="1"/>
 			</form>
+		</section>
+		<section class="mainheader">
+			<header class="mainheader__header">
+				<h1>Réservez le menu qui vous convient</h1>
+				<p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+			</header>
+			<button class="btn">
+				<span>Explorer nos restaurants</span>
+			</button>
+		</section>
 		</section>
 		<section class="fonction">
 			<header class="fonction__header">
