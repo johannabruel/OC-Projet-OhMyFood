@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.form1 {
+.mainform {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,40 +8,19 @@
   background-color: #eaeaea;
   padding: 10px 0;
 }
-.form1__position {
+
+.form__position {
   width: 150px;
   border: none;
   font-size: 16px;
   background-color: #eaeaea;
 }
-.form1__position::placeholder {
+.form__position::placeholder {
   color: #353535;
   opacity: 1;
 }
-.form1__icone {
+.form__icone {
   color: #353535;
-}
-
-.form2 {
-  display: flex;
-  flex-direction: column;
-}
-.form2__header {
-  text-align: center;
-}
-.form2__header h1 {
-  padding: 10px 50px 0 50px;
-}
-.form2__header p {
-  margin: 10px 10px 30px 10px;
-  color: #3f3f3f;
-  font-weight: 100;
-}
-
-.form3 {
-  display: flex;
-  justify-content: center;
-  padding: 0 0 30px 0;
 }
 
 .headerimg {
@@ -201,6 +180,24 @@
 }
 .footer__list li i {
   width: 12px;
+}
+
+.mainheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 40px 0;
+}
+.mainheader__header {
+  text-align: center;
+}
+.mainheader__header h1 {
+  padding: 10px 50px 0 50px;
+}
+.mainheader__header p {
+  margin: 10px 10px 30px 10px;
+  color: #3f3f3f;
+  font-weight: 100;
 }
 
 * { /*Intégration des propriétés Box-sizing à tous les éléments */
