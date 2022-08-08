@@ -13,6 +13,8 @@
 	<title>Oh My food - Menu à la Note enchantée</title>
 </head>
 <body>
+    <!--Attention ajout script pour bug sur le hover avec Chrome-->
+    <script type="text/javascript">//</script>
 	<header>
 		<div class="header">
 			<a href="../index.html"><i class="header__return fas fa-arrow-left"></i></a>
@@ -25,7 +27,10 @@
     <main class="main">
         <header class="main__header">
             <h3 class="main__headertitle">La note enchantée</h3>
-            <i class="main__headericone far fa-heart fa-lg headermain__icone"></i>
+            <div class="buttonlike">
+                <i class="btnlike far fa-heart fa-lg"></i>
+                <i class="btnlike--color far fa-heart fa-lg"></i>
+            </div>
         </header>
 
         <section class="menus">
@@ -193,9 +198,9 @@
                 </div>
             </div>
         </section>
-        <section class="container-btn">
+        <div class="container-btn">
             <button class="btn" type="button">Commander</button>
-        </section>
+        </div>
     </main>
     <footer class="footer">
 		<span class="footer__logo">ohmyfood</span>

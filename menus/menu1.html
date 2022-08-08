@@ -4,15 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="description" content="Application de commande de repas en ligne qui permet de composer son menu et de réduire le temps d'attente dans les restaurants">
-	<link rel="stylesheet" href="../css/main.css" />
-	<!--Ajout police d'écriture-->
+    <!--Ajout police d'écriture-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-	<title>Oh My food - Menu à la palette du goût</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Oh My food - Menu à la palette du goût</title>
+   
 </head>
 <body>
+    <!--Attention ajout script pour bug sur le hover avec Chrome-->
+    <script type="text/javascript">//</script>
 	<header>
 		<div class="header">
 			<a href="../index.html"><i class="header__return fas fa-arrow-left"></i></a>
@@ -25,7 +28,10 @@
     <main class="main">
         <header class="main__header">
             <h3 class="main__headertitle">La palette du goût</h3>
-            <i class="main__headericone far fa-heart fa-lg headermain__icone"></i>
+            <div class="buttonlike">
+                <i class="btnlike far fa-heart fa-lg"></i>
+                <i class="btnlike--color far fa-heart fa-lg"></i>
+            </div>
         </header>
 
         <section class="menus">
@@ -178,9 +184,9 @@
                 </div>
             </div>
         </section>
-        <section class="container-btn">
+        <div class="container-btn">
             <button class="btn" type="button">Commander</button>
-        </section>
+        </div>
     </main>
     <footer class="footer">
 		<span class="footer__logo">ohmyfood</span>
