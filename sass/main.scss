@@ -1,5 +1,6 @@
 @import "./utils/variables";
 
+@import "./layouts/loader";
 @import "./layouts/form";
 @import "./layouts/menu";
 @import "./layouts/header";
@@ -7,8 +8,10 @@
 @import "./layouts/mainheader";
 
 @import "./base/base";
+@import "./base/animations";
 
 @import "./components/button";
+@import "./components/buttonlike";
 
 @import "./pages/fonction";
 @import "./pages/articles"
