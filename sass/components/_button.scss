@@ -1,7 +1,7 @@
 .btn {
     display: flex;
     justify-content: center;
-    background:linear-gradient(#FF79DA,#9356dc) ;
+    background:linear-gradient($color-secondary,$color-primary) ;
     border-radius : 20px;
     color: white;
     width: 210px;
