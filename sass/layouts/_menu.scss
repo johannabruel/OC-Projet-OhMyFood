@@ -32,7 +32,6 @@
 .menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     max-width: 100%;
     gap: 15px;
     margin: 30px 0;
@@ -46,7 +45,7 @@
     &__title {
         display: flex;
         flex-direction: column;
-        animation: appearY 300ms ease-in backwards;
+        animation: appearY 200ms ease-in backwards;
     }
 
     &__title::after {
@@ -69,7 +68,7 @@
     width: 100%;
     box-shadow: 0 3px 4px #d3d3d3;
     cursor: pointer;
-    animation: appearY 300ms ease-in-out backwards;
+    animation: appearY 200ms ease-in-out backwards;
 
     &__header {
         overflow: hidden;
@@ -132,11 +131,23 @@
     }
 }
 
-.menu>div:nth-child(1){animation-delay: 200ms;}
-.menu>div:nth-child(2){animation-delay: 400ms;}
-.menu>div:nth-child(3){animation-delay: 600ms;}
-.menu>div:nth-child(4){animation-delay: 800ms;}
-.menu>div:nth-child(5){animation-delay: 100ms;}
+.menu-entree h4 {animation-delay: 0ms;}
+.menu-entree>div:nth-child(2){animation-delay: 300ms;}
+.menu-entree>div:nth-child(3){animation-delay: 400ms;}
+.menu-entree>div:nth-child(4){animation-delay: 500ms;}
+.menu-entree>div:nth-child(5){animation-delay: 600ms;}
+
+.menu-meal h4 {animation-delay: 700ms;}
+.menu-meal>div:nth-child(2){animation-delay: 800ms;}
+.menu-meal>div:nth-child(3){animation-delay: 900ms;}
+.menu-meal>div:nth-child(4){animation-delay: 1000ms;}
+
+.menu-dessert h4 {animation-delay: 1100ms;}
+.menu-dessert>div:nth-child(2){animation-delay: 1200ms;}
+.menu-dessert>div:nth-child(3){animation-delay: 1300ms;}
+.menu-dessert>div:nth-child(4){animation-delay: 1400ms;}
+
+
 
 .container-btn {
     display: flex;
