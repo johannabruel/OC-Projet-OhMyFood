@@ -1,6 +1,5 @@
 .btn {
-    display: flex;
-    justify-content: center;
+    @include center-flex;
     background:linear-gradient($color-secondary,$color-primary) ;
     border-radius : 20px;
     color: white;

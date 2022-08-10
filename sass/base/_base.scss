@@ -6,7 +6,7 @@
 
  body {
     margin: 0;
-    font-family:'Roboto',Impact,'Arial Black', Arial, Verdana, sans-serif;
+    @include main-font;
     font-size: 18px;
  }
 
@@ -25,7 +25,7 @@ h2 {
 }
 
 h3 {
-   font-family:'Shrikhand',Impact,'Arial Black', Arial, Verdana, sans-serif;
+   @include secondary-font;
    font-size: 26px;
    margin: 10px 0 0 0px;
 }
@@ -67,10 +67,10 @@ footer a {
 }
 
 .footer {
-   background-color: #353535 ;
+   background-color: $color-background-footer ;
    color: white;
 
    &__logo {
-      font-family: 'Shrikhand'
+      @include secondary-font;
    }
 }

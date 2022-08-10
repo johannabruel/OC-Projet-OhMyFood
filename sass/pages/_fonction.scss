@@ -28,7 +28,7 @@
     }
 
     &:hover {
-        background-color: #f4edfd;
+        background-color:$color-background-fonct-hover;
         transition-duration: 400ms;
     }
 
@@ -50,7 +50,7 @@
     &::before {
         counter-increment: fonction-counter 1;
         content: counter(fonction-counter);
-        border: transparent;
+        border: $color-invisible;
         border-radius: 100%;
         background-color:$color-primary;
         padding: 4px 9px;
