@@ -1,12 +1,12 @@
 @charset "UTF-8";
 .loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   background: white;
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
   animation: loaderout 300ms forwards ease-in-out;
@@ -41,6 +41,12 @@
 }
 
 .loadingcircle1 {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
   border-right: 5px solid #FF79DA;
@@ -48,16 +54,16 @@
   border-radius: 50%;
   width: 210px;
   height: 210px;
+  animation: spin 2000ms 900ms ease-in-out;
+}
+
+.loadingcircle2 {
   margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  animation: spin 2000ms 900ms ease-in-out;
-}
-
-.loadingcircle2 {
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   border-top: 5px solid #99e2d0;
@@ -65,16 +71,16 @@
   border-radius: 50%;
   width: 230px;
   height: 230px;
+  animation: spin 2000ms 900ms reverse ease-in-out;
+}
+
+.loadingcircle3 {
   margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  animation: spin 2000ms 900ms reverse ease-in-out;
-}
-
-.loadingcircle3 {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #9356dc;
@@ -82,25 +88,19 @@
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
   animation: spin 2000ms 900ms ease-in-out;
 }
 
 .loadingtexte {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   width: 200px;
   animation: appear 1000ms 500ms both;
@@ -661,7 +661,7 @@ footer a {
   transition-duration: 400ms;
 }
 .list:hover > .list__icone {
-  color: #9356DC;
+  color: #9356dc;
 }
 .list__texte {
   overflow: hidden;
@@ -677,7 +677,7 @@ footer a {
   content: counter(fonction-counter);
   border: transparent;
   border-radius: 100%;
-  background-color: #9356DC;
+  background-color: #9356dc;
   padding: 4px 9px;
   color: white;
   position: relative;
