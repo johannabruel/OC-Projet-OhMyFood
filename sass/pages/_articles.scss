@@ -14,20 +14,20 @@
     border: 2px transparent;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 4px 4px #d3d3d3;
+    box-shadow: 0 4px 4px $color-shadow;
     transition: box-shadow 0.3s ease-in-out;
     @media screen and (min-width:790px){
         width: 48%;
     }
 
     &::after {
-        box-shadow: 0 8px 16px #C0C0C0;
+        box-shadow: 0 8px 16px $color-shadow-hover;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
     }
 
     &:hover {
-        box-shadow: 0 8px 16px #C0C0C0;
+        box-shadow: 0 8px 16px $color-shadow-hover;
         &::after {
             opacity: 1;
         }

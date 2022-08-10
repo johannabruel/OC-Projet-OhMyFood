@@ -33,7 +33,7 @@
     }
 
     &:hover > .list__icone {
-        color: #9356DC;
+        color: $color-primary;
     }
 
     &__texte {
@@ -52,7 +52,7 @@
         content: counter(fonction-counter);
         border: transparent;
         border-radius: 100%;
-        background-color: #9356DC;
+        background-color:$color-primary;
         padding: 4px 9px;
         color: white;
         position:relative;

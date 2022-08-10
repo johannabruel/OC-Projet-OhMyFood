@@ -1,11 +1,9 @@
 .loader {
+    @include center-flex;
     overflow: hidden; 
     background: white;
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0;
     animation: loaderout 300ms forwards ease-in-out;
@@ -13,12 +11,7 @@
     z-index: 100;
 }
 .circle {
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    @include center-element;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -27,18 +20,14 @@
 }
 
 .loadingcircle {
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0; 
+    @include center-element;
     height: 300px;
     width: 300px; 
     animation: rise2 750ms ease forwards;
 }
 
 .loadingcircle1 {
+    @include center-element;
     border-bottom: 5px solid transparent;
     border-top: 5px solid transparent;
     border-right: 5px solid $color-secondary;
@@ -46,16 +35,11 @@
     border-radius: 50%;
     width: 210px;
     height: 210px;
-    margin: auto;
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
     animation: spin 2000ms 900ms ease-in-out;
 }
 
 .loadingcircle2 {
+    @include center-element;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
     border-top: 5px solid $color-tertiary;
@@ -63,16 +47,11 @@
     border-radius: 50%;
     width: 230px;
     height: 230px;
-    margin: auto;
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
     animation: spin 2000ms 900ms reverse ease-in-out;
 }
 
 .loadingcircle3 {
+    @include center-element;
     border-left:5px solid transparent ;
     border-right: 5px solid transparent;
     border-top: 5px solid $color-primary;
@@ -80,25 +59,12 @@
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    margin: auto;
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
     animation: spin 2000ms 900ms ease-in-out;
 }
 
 .loadingtexte {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    @include center-element;
+    @include center-flex;
     height: 50px;
     width: 200px;
     animation: appear 1000ms 500ms both;

@@ -1,12 +1,10 @@
 .mainform {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center-flex;
     width: 100%;
     gap: 15px;
-    background-color: #eaeaea;
+    background-color:$color-background;
     padding: 10px 0;
-    box-shadow: inset 0 3px 4px #d3d3d3;
+    box-shadow: inset 0 3px 4px $color-shadow;
 }
 
 .form {
@@ -15,14 +13,14 @@
       border: none;
       font-size: 16px;
       padding: 0 10px;
-      background-color: #eaeaea;
+      background-color:$color-background;
 
         &::placeholder {
-            color: #353535;;
+            color:$color-form;
             opacity: 1;
         }
     }
     &__icone {
-        color: #353535;
+        color: $color-form;
     }
 }

@@ -8,7 +8,7 @@
     margin-top: -30px;
     position: relative;
     border-radius: 30px 30px 0 0;
-    background-color: #eaeaea;
+    background-color: $color-background;
     padding: 0 10px;
     padding: 10px 20px;
     
@@ -30,8 +30,7 @@
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
+    @include column-flex;
     max-width: 100%;
     gap: 15px;
     margin: 30px 0;
@@ -43,8 +42,7 @@
     } 
 
     &__title {
-        display: flex;
-        flex-direction: column;
+        @include column-flex;
         animation: appearY 200ms ease-in backwards;
     }
 
@@ -52,7 +50,7 @@
         content: "";
         width: 40px;
         height: 3px;
-        background-color: #99e2d0;
+        background-color: $color-tertiary;
         margin-top: 5px;
     }
 }
@@ -66,27 +64,21 @@
     overflow: hidden;
     padding: 10px 0px 10px 10px; 
     width: 100%;
-    box-shadow: 0 3px 4px #d3d3d3;
+    box-shadow: 0 3px 4px $color-shadow;
     cursor: pointer;
     animation: appearY 200ms ease-in-out backwards;
 
     &__header {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        @include overflow;
         flex: 1;
     }
 
     &__headertitle {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        @include overflow;
     }
     
     &__headerdescription {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        @include overflow;
     }
 
     &__price {
@@ -97,10 +89,8 @@
     }
     
     &__valid {
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        background-color: #99e2d0;
+        @include center-flex;
+        background-color: $color-tertiary;
         border-radius: 0 10px 10px 0;
         padding: 20px 10px;
         width: 50px;
@@ -121,7 +111,7 @@
         width: 20px;
 
         i {
-            color: #99e2d0;
+            color: $color-tertiary;
             font-size: 18px;
         }
     }
@@ -146,8 +136,6 @@
 .menu-dessert>div:nth-child(2){animation-delay: 1200ms;}
 .menu-dessert>div:nth-child(3){animation-delay: 1300ms;}
 .menu-dessert>div:nth-child(4){animation-delay: 1400ms;}
-
-
 
 .container-btn {
     display: flex;
