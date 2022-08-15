@@ -22,7 +22,7 @@
     }
 }
 .menus {
-    @include mobile-only {
+    @include tablet-desktop {
         @include center-flex;
     } 
 }
@@ -34,7 +34,7 @@
     margin: 30px 0;
     padding: 5px;
     overflow: hidden;
-    @include mobile-only{
+    @include tablet-desktop {
         width: 33%;
         margin: 30px 10px;
     } 

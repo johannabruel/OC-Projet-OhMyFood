@@ -16,7 +16,7 @@
     border-radius: 20px;
     box-shadow: 0 4px 4px $color-shadow;
     transition: box-shadow 0.3s ease-in-out;
-    @include mobile-only{
+    @include tablet-desktop {
         width: 48%;
     }
 
