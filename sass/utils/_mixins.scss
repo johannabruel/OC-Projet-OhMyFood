@@ -47,8 +47,8 @@
     border-left:5px solid $colour;
 }
 
-@mixin mobile-only {
-    @media  screen and (min-width: map-get($breakpoints, mobile)) {
+@mixin tablet-desktop {
+    @media  screen and (min-width: map-get($breakpoints, tablet)) {
         @content;   
     }
 }
