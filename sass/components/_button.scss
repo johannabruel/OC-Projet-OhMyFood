@@ -9,13 +9,12 @@
     font-weight: 400;
     border: none;
     box-shadow: 5px 5px 10px rgb(0,0,0,0.30);
-    transition: transform 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
     cursor: pointer;
 
     &:hover {
-        transform: scale(1.15);
+        transform: scale(1.05);
         filter: brightness(1.15);
         box-shadow: 5px 5px 10px rgb(0,0,0,0.60);
-
     }
 }
