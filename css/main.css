@@ -399,7 +399,7 @@
   padding: 10px 50px 0 50px;
 }
 .mainheader__header p {
-  margin: 10px 10px 30px 10px;
+  margin: 10px 20px 30px 20px;
   color: #3f3f3f;
   font-weight: 100;
 }
@@ -693,7 +693,7 @@ footer a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 30px;
+  gap: 25px;
 }
 
 .article {
