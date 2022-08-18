@@ -19,7 +19,8 @@
     display: flex;
     align-items: center;
     border-radius: 20px;
-    box-shadow: 3px 5px 5px #ececec;
+    box-shadow: 3px 5px 5px rgb(0, 0,0, 0.10);
+    transition: all 200ms ease-in-out;
     background-color: #f7f6f6;
     cursor: pointer;
     
@@ -30,6 +31,7 @@
     &:hover {
         background-color:$color-background-fonct-hover;
         transition-duration: 400ms;
+        box-shadow: 3px 5px 5px rgb(0, 0,0, 0.20) ;
     }
 
     &:hover > .list__icone {
