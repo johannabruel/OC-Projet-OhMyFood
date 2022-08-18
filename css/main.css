@@ -582,11 +582,11 @@ footer a {
   font-weight: 400;
   border: none;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   cursor: pointer;
 }
 .btn:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
   filter: brightness(1.15);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
@@ -647,7 +647,8 @@ footer a {
   display: flex;
   align-items: center;
   border-radius: 20px;
-  box-shadow: 3px 5px 5px #ececec;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: all 200ms ease-in-out;
   background-color: #f7f6f6;
   cursor: pointer;
 }
@@ -659,6 +660,7 @@ footer a {
 .list:hover {
   background-color: #f4edfd;
   transition-duration: 400ms;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .list:hover > .list__icone {
   color: #9356dc;
